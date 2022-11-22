@@ -1,7 +1,6 @@
 from imp import load_module
 import streamlit as st
-pip install streamlit_option_menu
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 # from load_image import load_image
 import numpy as np
 import pandas as pd
