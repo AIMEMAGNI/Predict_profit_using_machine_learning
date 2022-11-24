@@ -133,7 +133,7 @@ if selected == "Demo":
             prediction = model.predict([input_to_predict])
             ''')
             st.subheader('Predicted Profit in Rs')
-			st.subheader('Rs '+str(int(prediction[0])))
+	    st.subheader('Rs '+str(int(prediction[0])))
             
 
    
