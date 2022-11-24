@@ -86,58 +86,9 @@ if selected == "Project":
     st.subheader(f"1. Data")
     
 
-
-
     df = pd.read_csv("online.csv")
 
     st.dataframe(df, 1200, 400)
-
-    # cols = df.shape[1]
-    # X = df.iloc[:,:cols-2].values
-    # y = df.iloc[:,cols-1 : cols].values
-
-    # # Splitting the dataset into the Training set and Test set
-    # from sklearn.model_selection import train_test_split
-    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
-    
-    # # MODEL
-    # from sklearn.linear_model import LinearRegression
-    # regressor = LinearRegression()
-    # regressor.fit(X_train, y_train)
-
-    # # Predictions
-    # y_pred = regressor.predict(X_test)
-
-    # # StandardScaling
-    # from sklearn.preprocessing import StandardScaler
-    # scaler = StandardScaler()
-    # sc_x_train = scaler.fit_transform(X_train)
-
-    # #PCA
-    # from sklearn.decomposition import PCA
-    # transformer = PCA(n_components=1, random_state=0)
-    # x_train = transformer.fit_transform(sc_x_train)
-    # Y_train = transformer.fit_transform(y_train)
-
-    # #PLOT
-    # fig = plt.scatter(x_train, Y_train , color = 'red')
-    
-    # st.pyplot(fig)
-
-
-
-
-
-
-
-
-
-    # profile = ProfileReport(df)
-    # st.write(profile)
-
-
-
-
 
 
      
@@ -155,14 +106,20 @@ if selected == "Demo":
     input_to_predict = [input1, input2, input3]
 
 
-    # if input_to_predict is not None:
+    if input_to_predict is not None:
 
-    #     submit = st.button('Predict')
+        submit = st.button('Predict')
 
-    #     if submit:
+        if submit:
+            
     #         # model = keras.models.load_model('my_h5_model.h5')
     #         # # h5=h5py.File('my_h5_model.h5')
     #         # # model.predict(input_to_predict)
             
-    #         model = load_module('my_h5_model.h5')
-    #         model.predict(input_to_predict)     
+#             model = load_module('my_h5_model.h5')
+#             model.predict(input_to_predict)     
+
+
+            path = './model1.h5'
+            loaded_model= tf.keras.models.load_model(path)
+            loaded_model.predict(input_to_predict)   
