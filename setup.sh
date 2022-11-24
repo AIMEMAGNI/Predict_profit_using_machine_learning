@@ -7,5 +7,5 @@ email = \"aimemagnifique01@gmail.com\"\n\
 
 echo "\
 [theme]\n\
-base='dark'\n\
+base= \"dark\"\n\
 " > ~/.streamlit/config.toml
