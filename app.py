@@ -109,11 +109,13 @@ model.fit(sc_x_train, y_train)
            
      
 if selected == "Contact":
+	
     st.title(f"Contact us")
     st.image("./OG.jpg", width = 400)
 
 
 if selected == "Demo":
+	
     st.header("Test our model here")
     input1 =st.number_input('Enter the Marketing spend to predict profit')
     input2 =st.number_input('Enter admisnistration fees to predict profit')
@@ -125,15 +127,30 @@ if selected == "Demo":
 
 
     if input_to_predict is not None:
+		
+		submit = st.button('Predict')
+		
+		if submit:
+			
+			
+			st.code(''' 
+			
+                        prediction = model.predict([input_to_predict])
+                        ''')
+			st.subheader('Predicted Profit in Rs')
+			st.subheader('Rs '+str(int(prediction[0])))
+			
+	
+            
+	    
+		
+		
 
-        submit = st.button('Predict')
+        
 
-        if submit:
-            st.code(''' 
-            prediction = model.predict([input_to_predict])
-            ''')
-            st.subheader('Predicted Profit in Rs')
-	    st.subheader('Rs '+str(int(prediction[0])))
+        
+		
+            
             
 
    
