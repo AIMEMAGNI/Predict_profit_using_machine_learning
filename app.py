@@ -30,7 +30,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('image1.jpg')  
+add_bg_from_local('./image1.jpg')  
 
 def streamlit_menu():
     selected = option_menu(
@@ -60,7 +60,7 @@ selected = streamlit_menu()
 
 if selected == "Home":
     st.title(f"Company Profit prediction using Machine Learning")
-    st.image("image.png",use_column_width='always')
+    st.image("./image.png",use_column_width='always')
 
 
     
@@ -142,7 +142,7 @@ if selected == "Project":
      
 if selected == "Contact":
     st.title(f"Contact us")
-    st.image("OG.jpg", width = 400)
+    st.image("./OG.jpg", width = 400)
 
 
 if selected == "Demo":
