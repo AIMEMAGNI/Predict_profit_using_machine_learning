@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 # from PIL import Image
 import base64
-from pandas_profiling import ProfileReport
+# from pandas_profiling import ProfileReport
 # from tensorflow import keras
 # import h5py
 import pickle
