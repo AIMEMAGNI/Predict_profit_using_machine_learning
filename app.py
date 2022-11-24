@@ -74,8 +74,8 @@ if selected == "Project":
         
     with col2:
         st.subheader("Problem")
-        st.write(f'<h1 style="color:#33ff33;font-size:24px;">>{"Traditional data tools are only able to compute current profits of companies.”"})
-        st.markdown(f'<h1 style="color:#ffffff;font-size:24px;">{"Traditional data tools are only able to compute current profits of companies.”"}</h1>', unsafe_allow_html=True)       
+        st.write(f'<h1 style="color:#33ff33;font-size:24px;">>{"Traditional data tools are only able to compute current profits of companies."}')
+        st.markdown(f'<h1 style="color:#ffffff;font-size:24px;">{"Traditional data tools are only able to compute current profits of companies."}</h1>', unsafe_allow_html=True)       
 
     with col3:
         st.subheader("Solution")
