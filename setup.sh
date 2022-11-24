@@ -1,6 +1,6 @@
 mkdir -p ~/.streamlit/
 
-echo "\
-[theme]\n\
-base= \"dark\"\n\
+echo "
+[theme]
+base= "dark"
 " > ~/.streamlit/config.toml
