@@ -70,16 +70,16 @@ if selected == "Project":
 
     with col1:
         st.subheader("Introduction")
-        st.markdown(f'<h1 style="color:#ffffff;font-size:8px;">{"Profit is an indicator of  whether a company is developing, it shows company growth and can secure financing from a bank, attract investors to fund its operations."}', unsafe_allow_html=True)
+        st.markdown(f'<h5 style="color:#ffffff;font-size:20px;">{"Profit is an indicator of  whether a company is developing, it shows company growth and can secure financing from a bank, attract investors to fund its operations."}</h5>', unsafe_allow_html=True)
         
     with col2:
         st.subheader("Problem")
 #         st.write(f'<h1 style="color:#33ff33;font-size:24px;">>{"Traditional data tools are only able to compute current profits of companies."}')
-        st.markdown(f'<h1 style="color:#ffffff;font-size:8px;">{"Traditional data tools are only able to compute current profits of companies."}', unsafe_allow_html=True)       
+        st.markdown(f'<h5 style="color:#ffffff;font-size:20px;">{"Traditional data tools are only able to compute current profits of companies."}</h5>', unsafe_allow_html=True)       
 
     with col3:
         st.subheader("Solution")
-        st.markdown(f'<h1 style="color:#ffffff;font-size:8px;">{"Use of well trained Machine Learning models would provide an efficient solution."}', unsafe_allow_html=True)
+        st.markdown(f'<h5 style="color:#ffffff;font-size:20px;">{"Use of well trained Machine Learning models would provide an efficient solution."}</h5>', unsafe_allow_html=True)
     
     st.title(f"Let's explore the solution.")
 
