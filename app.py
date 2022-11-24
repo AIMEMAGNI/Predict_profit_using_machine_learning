@@ -10,23 +10,22 @@ import matplotlib.pyplot as plt
 
 
 def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
-    st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        background-size: cover
-
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
+	with open(image_file, "rb") as image_file:
+		encoded_string = base64.b64encode(image_file.read())
+		st.markdown(f"""
+                <style>
+                .stApp {{
+                background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+                background-size: cover }}
+		</style>
+                """,
+                unsafe_allow_html=True)
+         
 add_bg_from_local('./image1.jpg')  
 
+
 def streamlit_menu():
+	
     selected = option_menu(
         menu_title=None, 
         options=["Home", "Project","Demo","Contact"],  
@@ -53,15 +52,15 @@ def streamlit_menu():
 selected = streamlit_menu()
 
 if selected == "Home":
-    st.title(f"Company Profit prediction using Machine Learning")
-    st.image("./image.png",use_column_width='always')
-
-
+	st.title(f"Company Profit prediction using Machine Learning")
+        st.image("./image.png",use_column_width='always')
+	
     
 if selected == "Project":
-    st.title(f"Problem background information")
-    col1, col2, col3 = st.columns(3)
-
+	st.title(f"Problem background information")
+        col1, col2, col3 = st.columns(3)
+	
+   
     with col1:
         st.subheader("Introduction")
         st.markdown(f'<h5 style="color:#ffffff;font-size:20px;">{"Profit is an indicator of  whether a company is developing, it shows company growth and can secure financing from a bank, attract investors to fund its operations."}</h5>', unsafe_allow_html=True)
@@ -109,28 +108,24 @@ model.fit(sc_x_train, y_train)
            
      
 if selected == "Contact":
+	st.title(f"Contact us")
+        st.image("./OG.jpg", width = 400)
 	
-    st.title(f"Contact us")
-    st.image("./OG.jpg", width = 400)
-
-
+	
 if selected == "Demo":
+	st.header("Test our model here")
+        input1 =st.number_input('Enter the Marketing spend to predict profit')
+        input2 =st.number_input('Enter admisnistration fees to predict profit')
+        input3 =st.number_input('Enter transport fees to predict profit')
+
+        input_to_predict = [input1, input2, input3]
 	
-    st.header("Test our model here")
-    input1 =st.number_input('Enter the Marketing spend to predict profit')
-    input2 =st.number_input('Enter admisnistration fees to predict profit')
-    input3 =st.number_input('Enter transport fees to predict profit')
-
-    input_to_predict = [input1, input2, input3]
-    
-    
-
-
-    if input_to_predict is not None:
-		
+	
+	if input_to_predict is not None:
 		submit = st.button('Predict')
 		
 		if submit:
+			
 			
 			
 			st.code(''' 
