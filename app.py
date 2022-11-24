@@ -80,11 +80,33 @@ if selected == "Project":
     st.subheader(f"1. Data")
     
 
-    df = pd.read_csv("online.csv")
+    data = pd.read_csv("online.csv")
 
-    st.dataframe(df, 1200, 400)
+    st.dataframe(data, 1200, 400)
+    
+    st.code('''
 
+cols = data.shape[1]
+X = data.iloc[:,:cols-2].values
+y = data.iloc[:,cols-1 : cols].values
+            
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
+            
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+sc_x_train = scaler.fit_transform(X_train)
+sc_x_test = scaler.transform(X_test)
+
+            
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(sc_x_train, y_train)
+              ''')
+    
+           
      
 if selected == "Contact":
     st.title(f"Contact us")
@@ -98,6 +120,8 @@ if selected == "Demo":
     input3 =st.number_input('Enter transport fees to predict profit')
 
     input_to_predict = [input1, input2, input3]
+    
+    
 
 
     if input_to_predict is not None:
@@ -105,15 +129,11 @@ if selected == "Demo":
         submit = st.button('Predict')
 
         if submit:
+            st.code(''' 
+            prediction = model.predict([input_to_predict])
+            ''')
+            st.subheader('Predicted Profit in Rs')
+			st.subheader('Rs '+str(int(prediction[0])))
             
-    #         # model = keras.models.load_model('my_h5_model.h5')
-    #         # # h5=h5py.File('my_h5_model.h5')
-    #         # # model.predict(input_to_predict)
-            
-#             model = load_module('my_h5_model.h5')
-#             model.predict(input_to_predict)     
 
-
-            path = './model1.h5'
-            loaded_model= tf.keras.models.load_model(path)
-            loaded_model.predict(input_to_predict)   
+   
