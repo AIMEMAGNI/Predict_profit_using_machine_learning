@@ -70,7 +70,7 @@ if selected == "Project":
 
     with col1:
         st.subheader("Introduction")
-        st.markdown(f'<h1 style="color:#ffffff;font-size:24px;">{'Profit is an indicator of  whether a company is developing, it shows company growth and can secure financing from a bank, attract investors to fund its operations.'}', unsafe_allow_html=True)
+        st.markdown(f'<h1 style="color:#ffffff;font-size:24px;">{"Profit is an indicator of  whether a company is developing, it shows company growth and can secure financing from a bank, attract investors to fund its operations."}', unsafe_allow_html=True)
         
     with col2:
         st.subheader("Problem")
