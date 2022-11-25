@@ -11,7 +11,7 @@ import base64
 # from tensorflow import keras
 # import h5py
 # import pickle
-
+import joblib
 # import cv2
 # from tensorflow.keras.models import load_model
 
@@ -92,7 +92,7 @@ if selected == "Project":
 
     st.dataframe(df, 1200, 400)
 
-     
+ 
 if selected == "Contact":
     st.title(f"Contact us")
     st.image("OG.jpg", width = 400)
@@ -107,16 +107,13 @@ if selected == "Demo":
     input_to_predict = [input1, input2, input3]
 
 
-    # if input_to_predict is not None:
+    if input_to_predict is not None:
 
-    #     submit = st.button('Predict')
+        submit = st.button('Predict')
 
-    #     if submit:
-    #         path = './model1.h5'
-    #         # loaded_model= keras.models.load_model(path)
-
-    #         # loaded_model.predict(input_to_predict)     
-
-    #         new_model = h5py.File(path, "r")
-    #         new_model.predict(input_to_predict) 
+        if submit:
+            
+            m_jlib = joblib.load('model_jlib')
+            prediction = m_jlib.predict(input_to_predict) 
+            st.subheader('Predicted profit is '+str(int(prediction[0])))
 
