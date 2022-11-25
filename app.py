@@ -116,7 +116,7 @@ if selected == "Contact":
 
 if selected == "Demo":
     
-    st.succeess('This demo uses the model only trained on dataset showed in Project section, so the predictions might not be too practical.')
+    st.success('This demo uses the model only trained on dataset showed in Project section, so the predictions might not be too practical.')
 
     st.header("Test our model here")
     input1 =st.number_input('Enter the Marketing spend to predict profit', step=1, value=0)
