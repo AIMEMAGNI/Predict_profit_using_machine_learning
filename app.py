@@ -85,7 +85,7 @@ if selected == "Project":
 
     df = pd.read_csv("online.csv")
     
-    st.info('This dataset only shows the expenditures and profit from an unkown company. It does not show their investiments or capital. However it was used to showcase how Machine Learning model would handle the task because it uses the similar approach to solve the problem.')
+    st.error('This dataset only shows the expenditures and profit from an unkown company. It does not show their investiments or capital. However it was used to showcase how Machine Learning model would handle the task because it uses the similar approach to solve the problem.')
     st.dataframe(df, 1200, 400)
     
     st.write("Click the link below to view the original source of dataset.")
