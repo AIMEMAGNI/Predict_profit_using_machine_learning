@@ -7,10 +7,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 # from PIL import Image
 import base64
-from pandas_profiling import ProfileReport
-from tensorflow import keras
-import h5py
-import pickle
+# from pandas_profiling import ProfileReport
+# from tensorflow import keras
+# import h5py
+# import pickle
 
 # import cv2
 # from tensorflow.keras.models import load_model
