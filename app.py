@@ -91,6 +91,9 @@ if selected == "Project":
     df = pd.read_csv("online.csv")
 
     st.dataframe(df, 1200, 400)
+    
+    st.write("Please copy the link below to your browser to view the original source of dataset!")
+    st.write("https://www.kaggle.com/datasets/rahuljoysoyal/onlinecsv")
 
  
 if selected == "Contact":
@@ -103,6 +106,9 @@ if selected == "Contact":
     st_button('linkedin', 'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/', 'Follow me on LinkedIn', icon_size)
     st_button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
     st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
+    
+    st.write("To view this project on github, copy the link below to your browser!")
+    st.wite("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
    
 
 if selected == "Demo":
@@ -123,4 +129,6 @@ if selected == "Demo":
             m_jlib = joblib.load('model_jlib')
             prediction = m_jlib.predict([input_to_predict]) 
             st.subheader('Predicted profit is '+str(int(prediction[0])))
+            
+            
 
