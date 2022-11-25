@@ -95,6 +95,11 @@ if selected == "Project":
  
 if selected == "Contact":
     st.title(f"Contact us")
+    st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
+    st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
+    st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
+    st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter', icon_size)
+    st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
     st.image("OG.jpg", width = 400)
 
 
