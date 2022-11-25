@@ -8,7 +8,7 @@ import joblib
 
 
 
-st.write("For proper visualisations of this project, please change the theme to dark, by clicking the menu icon in upright corner in settings")
+st.write("For proper visualisations of this app, please change the theme to dark, by clicking the menu icon in upright corner in settings.")
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
