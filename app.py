@@ -114,6 +114,6 @@ if selected == "Demo":
         if submit:
             
             m_jlib = joblib.load('model_jlib')
-            prediction = m_jlib.predict(input_to_predict) 
+            prediction = m_jlib.predict([input_to_predict]) 
             st.subheader('Predicted profit is '+str(int(prediction[0])))
 
