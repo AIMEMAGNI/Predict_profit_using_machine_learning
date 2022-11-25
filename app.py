@@ -94,6 +94,11 @@ if selected == "Project":
     
     st.write("Click the link below to view the original source of dataset.")
     st.write("https://www.kaggle.com/datasets/rahuljoysoyal/onlinecsv")
+    
+    st.subheader(f"2. Model")
+    st.write("In this project we used Logistic Regression model.")
+    
+    
 
  
 if selected == "Contact":
