@@ -108,7 +108,7 @@ if selected == "Contact":
     st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
     
     st.write("To view this project on github, copy the link below to your browser!")
-    st.wite("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
+    st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
    
 
 if selected == "Demo":
