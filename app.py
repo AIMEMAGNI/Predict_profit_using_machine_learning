@@ -8,7 +8,8 @@ import joblib
 
 
 
-st.write("For proper visualisations of this app, please change the theme to dark, by clicking the menu icon in upright corner in settings.")
+st.info("For proper visualisations of this app, please change the theme to dark, by clicking the menu icon in upright corner> settings > Theme.", icon="ℹ️")
+
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
@@ -83,7 +84,8 @@ if selected == "Project":
 
 
     df = pd.read_csv("online.csv")
-
+    
+    st.info('This dataset only shows the expenditures and profit from an unkown company. It does not show their investiments or capital. However it was used to showcase how Machine Learning model would handle the task because it uses the similar approach to solve the problem.', icon="ℹ️")
     st.dataframe(df, 1200, 400)
     
     st.write("Click the link below to view the original source of dataset.")
@@ -111,6 +113,9 @@ if selected == "Contact":
    
 
 if selected == "Demo":
+    
+    st.warning('This demo uses the model only trained on dataset showed in Project section, so the predictions might not be too practical.', icon="⚠️")
+
     st.header("Test our model here")
     input1 =st.number_input('Enter the Marketing spend to predict profit', step=1, value=0)
     input2 =st.number_input('Enter admisnistration fees to predict profit',step=1, value=0)
