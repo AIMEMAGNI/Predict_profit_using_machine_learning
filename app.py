@@ -98,13 +98,12 @@ if selected == "Contact":
     
     from st_functions import st_button, load_css
     
-    icon_size = 20
-
-    st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
-    st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
-    st_button('medium', 'https://data-professor.medium.com/', 'Read my Blogs', icon_size)
-    st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter', icon_size)
-    st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
+    icon_size = 25
+    
+    st_button('linkedin', 'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/', 'Follow me on LinkedIn', icon_size)
+    st_button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
+    st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
+   
     st.image("OG.jpg", width = 400)
 
 
