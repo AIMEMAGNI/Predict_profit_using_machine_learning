@@ -104,8 +104,6 @@ if selected == "Contact":
     st_button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
     st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
    
-    st.image("OG.jpg", width = 400)
-
 
 if selected == "Demo":
     st.header("Test our model here")
