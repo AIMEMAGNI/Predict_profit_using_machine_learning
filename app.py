@@ -113,9 +113,9 @@ if selected == "Contact":
 
 if selected == "Demo":
     st.header("Test our model here")
-    input1 =st.number_input('Enter the Marketing spend to predict profit', step=1, value=1)
-    input2 =st.number_input('Enter admisnistration fees to predict profit',step=1, value=1)
-    input3 =st.number_input('Enter transport fees to predict profit',step=1, value=1)
+    input1 =st.number_input('Enter the Marketing spend to predict profit', step=1, value=0)
+    input2 =st.number_input('Enter admisnistration fees to predict profit',step=1, value=0)
+    input3 =st.number_input('Enter transport fees to predict profit',step=1, value=0)
 
     input_to_predict = [input1, input2, input3]
 
