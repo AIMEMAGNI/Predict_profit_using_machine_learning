@@ -92,7 +92,7 @@ if selected == "Project":
 
     st.dataframe(df, 1200, 400)
     
-    st.write("Please copy the link below to your browser to view the original source of dataset!")
+    st.write("Click the link below to view the original source of dataset.")
     st.write("https://www.kaggle.com/datasets/rahuljoysoyal/onlinecsv")
 
  
@@ -107,7 +107,7 @@ if selected == "Contact":
     st_button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
     st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
     
-    st.write("To view this project on github, copy the link below to your browser!")
+    st.write("To view this project on github, click the link below.")
     st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
    
 
