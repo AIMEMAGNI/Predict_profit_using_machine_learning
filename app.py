@@ -93,7 +93,7 @@ if selected == "Project":
     st.subheader(f"2. Model")
     st.write("In this project we used Logistic Regression model.")
     
-    st.subheader(f"2. Model accuracy")
+    st.subheader(f"3. Model accuracy")
     st.write("The overall accuracy of the model is "+ str(float(0.8982240277293291)))
     
     
