@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import base64
 import joblib
+import sklearn
 
 
 
@@ -124,6 +125,12 @@ if selected == "Demo":
     input3 =st.number_input('Enter transport fees to predict profit',step=1, value=0)
 
     input_to_predict = [input1, input2, input3]
+    
+    from sklearn.preprocessing import StandardScaler
+
+    scaler = StandardScaler()
+    sc_input = scaler.transform(input_to_predict)
+
 
 
     if input_to_predict is not None:
@@ -133,7 +140,7 @@ if selected == "Demo":
         if submit:
             
             m_jlib = joblib.load('model_jlib')
-            prediction = m_jlib.predict([input_to_predict]) 
+            prediction = m_jlib.predict([sc_input]) 
             st.subheader('Predicted profit is '+str(int(prediction[0])))
             
             
