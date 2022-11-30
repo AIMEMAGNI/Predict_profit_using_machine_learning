@@ -128,7 +128,7 @@ if selected == "Demo":
     
     input_to_predict = np.array(input_to_predict)
     
-    input_to_predict = np.reshape(input_to_predict,(-1, 3))
+#     input_to_predict = np.reshape(input_to_predict,(-1, 2))
     
     from sklearn.preprocessing import StandardScaler
 
@@ -143,9 +143,9 @@ if selected == "Demo":
 
         if submit:
             
-            m_jlib = joblib.load('model_jlib')
-            prediction = m_jlib.predict(sc_input) 
-            st.subheader('Predicted profit is '+str(int(prediction)))
+            m_jlib = joblib.load('./model_jlib')
+            prediction = m_jlib.predict([sc_input]) 
+            st.subheader('Predicted profit is '+str(int(prediction[0])))
             
             
 
