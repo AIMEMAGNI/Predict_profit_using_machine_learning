@@ -79,11 +79,9 @@ if selected == "Project":
     
     st.title(f"Let's explore the solution.")
 
-    st.subheader(f"1. Data")
     
-
-
-
+    
+    st.subheader(f"1. Data")
     df = pd.read_csv("online.csv")
     
     st.success('This dataset only shows the expenditures and profit from an unrevealed company. It does not show their investiments or capital. However it was used to showcase how Machine Learning model would help in profit prediction, because Machine Learning model uses the similar approach for prediction.')
@@ -94,6 +92,10 @@ if selected == "Project":
     
     st.subheader(f"2. Model")
     st.write("In this project we used Logistic Regression model.")
+    
+    st.subheader(f"2. Model accuracy")
+    st.write("The overall accuracy of the model is "+ str(int(0.8982240277293291)))
+    
     
     
 
