@@ -145,7 +145,7 @@ if selected == "Demo":
             
             m_jlib = joblib.load('model_jlib')
             prediction = m_jlib.predict(sc_input) 
-            st.subheader('Predicted profit is '+str(int(prediction[0])))
+            st.subheader('Predicted profit is '+str(int(prediction)))
             
             
 
