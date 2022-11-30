@@ -126,6 +126,8 @@ if selected == "Demo":
 
     input_to_predict = [input1, input2, input3]
     
+    input_to_predict = np.array(input_to_predict)
+    
     from sklearn.preprocessing import StandardScaler
 
     scaler = StandardScaler()
