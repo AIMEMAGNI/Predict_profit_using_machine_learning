@@ -131,7 +131,7 @@ if selected == "Demo":
     from sklearn.preprocessing import StandardScaler
 
     scaler = StandardScaler()
-    sc_input = scaler.transform(input_to_predict)
+    sc_input = scaler.fit_transform(input_to_predict)
 
 
 
