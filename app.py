@@ -128,7 +128,7 @@ if selected == "Demo":
     
     input_to_predict = np.array(input_to_predict)
     
-#     input_to_predict = np.reshape(input_to_predict,(-1, 2))
+    input_to_predict = np.reshape(input_to_predict,(3))
     
     from sklearn.preprocessing import StandardScaler
 
