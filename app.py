@@ -58,7 +58,6 @@ selected = streamlit_menu()
 if selected == "Home":
     st.title(f"Company Profit prediction using Machine Learning")
     st.image("image.png",use_column_width='always')
-    st.video("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning/blob/main/Project_introduction.mp4", format="video/mp4", start_time=0)
 
 
 
