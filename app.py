@@ -82,7 +82,7 @@ if selected == "Project":
         st.write("Use of well trained Machine Learning models would provide an efficient solution.")
     
     st.title(f"Let's explore the solution.")
-    st.markdown(f'<h1 style="color:#FFFFFF;font-size:30px;">{"Let's explore the solution."}</h1>', unsafe_allow_html=True)     
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:30px;">{"Let us explore the solution."}</h1>', unsafe_allow_html=True)     
 
     
 
