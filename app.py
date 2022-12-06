@@ -9,7 +9,7 @@ import sklearn
 
 
 
-st.info("For proper visualisations of this app, please change the theme to dark, by clicking the menu icon in upright corner> settings > Theme>Dark.")
+st.info("# For proper visualisations of this app, please change the theme to dark, by clicking the menu icon in upright corner> settings > Theme>Dark.")
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
