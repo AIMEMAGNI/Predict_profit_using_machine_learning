@@ -56,8 +56,7 @@ def streamlit_menu():
 selected = streamlit_menu()
 
 if selected == "Home":
-    st.title(f"Company Profit prediction using Machine Learning")
-    st.markdown(f'<h1 style="color:#FFFFFF;font-size:35px;">{"Company Profit prediction using Machine Learning”"}</h1>', unsafe_allow_html=True)     
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:42px;">{"Company Profit prediction using Machine Learning"}</h1>', unsafe_allow_html=True)     
     st.image("image.png",use_column_width='always')
 
 
