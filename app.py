@@ -123,8 +123,7 @@ if selected == "Demo":
     
     st.success('This demo uses the model only trained on dataset showed in Project section, so the predictions might not be too practical.')
 
-    st.header("Test our model here")
-    st.markdown(f'<h1 style="color:#FFFFFF;font-size:42px;">{"Test our model here"}</h1>', unsafe_allow_html=True)     
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:35px;">{"Test our model here"}</h1>', unsafe_allow_html=True)     
     
     input1 =st.number_input('Enter the Marketing spend to predict profit', step=1, value=0)
     input2 =st.number_input('Enter admisnistration fees to predict profit',step=1, value=0)
