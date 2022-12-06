@@ -64,8 +64,7 @@ if selected == "Home":
 
     
 if selected == "Project":
-    st.title(f"Problem background information")
-    st.markdown(f'<h1 style="color:#FFFFFF;font-size:30px;">{"Problem background information"}</h1>', unsafe_allow_html=True)     
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:40px;">{"Problem background information"}</h1>', unsafe_allow_html=True)     
 
     col1, col2, col3 = st.columns(3)
 
@@ -81,8 +80,7 @@ if selected == "Project":
         st.subheader("Solution")
         st.write("Use of well trained Machine Learning models would provide an efficient solution.")
     
-    st.title(f"Let's explore the solution.")
-    st.markdown(f'<h1 style="color:#FFFFFF;font-size:30px;">{"Let us explore the solution."}</h1>', unsafe_allow_html=True)     
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:40px;">{"Let us explore the solution."}</h1>', unsafe_allow_html=True)     
 
     
 
