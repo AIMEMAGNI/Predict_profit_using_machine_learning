@@ -106,7 +106,8 @@ if selected == "Project":
 
  
 if selected == "Contact":
-    st.title(f"Contact us")
+    st.markdown(f'<h1 style="color:#FFFFFF;font-size:42px;">{"Contact us"}</h1>', unsafe_allow_html=True)     
+
     
     from st_functions import st_button, load_css
     
