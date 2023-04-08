@@ -110,12 +110,21 @@ if selected == "Contact":
 
     
     # from st_functions import st_button, load_css
+    import webbrowser
     
     icon_size = 25
     
-    st.button('linkedin', 'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/', 'Follow me on LinkedIn', icon_size)
-    st.button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
-    st.button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
+    st.button('linkedin', icon_size)
+    st.button('twitter', icon_size)
+    st.button('youtube', icon_size)
+    
+    if st.button('linkedin'):
+        webbrowser.open_new_tab('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
+    
+    elif st.button('twitter'):
+        webbrowser.open_new_tab('https://twitter.com/aime_magnifique')
+    elif st.button('youtube'):
+        webbrowser.open_new_tab('https://www.youtube.com/')
     
     st.write("To view this project on github, click the link below.")
     st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
