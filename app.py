@@ -118,14 +118,22 @@ if selected == "Contact":
 #     st.button('twitter', icon_size)
 #     st.button('youtube', icon_size)
     
-    if st.button('linkedin'):
-        webbrowser.open_new('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
- 
-    elif st.button('twitter'):
-        webbrowser.open_new_tab('https://twitter.com/aime_magnifique')
+    st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
+    <button style="background-color:Green;">'linkedin'</button></a>''', unsafe_allow_html=True)
+    
+    st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
+    <button style="background-color:Green;">'twitter'</button></a>''', unsafe_allow_html=True)
+    
+    st.markdown(f'''<a href={'https://www.youtube.com/'}>
+    <button style="background-color:Green;">'youtube'</button></a>''', unsafe_allow_html=True)
+    
+#     if st.button('linkedin'):
+#         webbrowser.open_new('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
+#     elif st.button('twitter'):
+#         webbrowser.open_new_tab('https://twitter.com/aime_magnifique')
         
-    elif st.button('youtube'):
-        webbrowser.open_new_tab('https://www.youtube.com/')
+#     elif st.button('youtube'):
+#         webbrowser.open_new_tab('https://www.youtube.com/')
     
     st.write("To view this project on github, click the link below.")
     st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
