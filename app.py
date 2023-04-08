@@ -109,13 +109,13 @@ if selected == "Contact":
     st.markdown(f'<h1 style="color:#FFFFFF;font-size:42px;">{"Contact us"}</h1>', unsafe_allow_html=True)     
 
     
-    from st_functions import st_button, load_css
+    # from st_functions import st_button, load_css
     
     icon_size = 25
     
-    st_button('linkedin', 'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/', 'Follow me on LinkedIn', icon_size)
-    st_button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
-    st_button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
+    st.button('linkedin', 'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/', 'Follow me on LinkedIn', icon_size)
+    st.button('twitter', 'https://twitter.com/aime_magnifique', 'Follow me on Twitter', icon_size)
+    st.button('youtube', 'https://www.youtube.com/', 'YouTube', icon_size)
     
     st.write("To view this project on github, click the link below.")
     st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
