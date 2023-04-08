@@ -109,7 +109,7 @@ if selected == "Contact":
     st.markdown(f'<h1 style="color:#FFFFFF;font-size:42px;">{"Contact us"}</h1>', unsafe_allow_html=True)     
 
     
-    from st_functions import st_button, load_css
+    # from st_functions import st_button, load_css
     
     icon_size = 25
     
