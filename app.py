@@ -114,15 +114,16 @@ if selected == "Contact":
     
     icon_size = 25
     
-    st.button('linkedin', icon_size)
-    st.button('twitter', icon_size)
-    st.button('youtube', icon_size)
+#     st.button('linkedin', icon_size)
+#     st.button('twitter', icon_size)
+#     st.button('youtube', icon_size)
     
     if st.button('linkedin'):
-        webbrowser.open_new_tab('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
-    
+        webbrowser.open_new('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
+ 
     elif st.button('twitter'):
         webbrowser.open_new_tab('https://twitter.com/aime_magnifique')
+        
     elif st.button('youtube'):
         webbrowser.open_new_tab('https://www.youtube.com/')
     
@@ -156,5 +157,4 @@ if selected == "Demo":
             prediction = m_jlib.predict([input_to_predict]) 
             st.subheader('Predicted profit is '+str(int(prediction[0])))
             
-            
-
+          
