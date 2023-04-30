@@ -121,7 +121,7 @@ if selected == "Contact":
     st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
     <button style="background-color:Green;">Linkedin</button></a>''', unsafe_allow_html=True)
     
-    st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
+    st.markdown(f'''<a href={'https://twitter.com/aime_magnifique'}>
     <button style="background-color:Green;">Twitter</button></a>''', unsafe_allow_html=True)
     
     st.markdown(f'''<a href={'https://www.youtube.com/'}>
