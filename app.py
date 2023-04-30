@@ -119,13 +119,13 @@ if selected == "Contact":
 #     st.button('youtube', icon_size)
     
     st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
-    <button style="background-color:Green;">'linkedin'</button></a>''', unsafe_allow_html=True)
+    <button style="background-color:Green;">Linkedin</button></a>''', unsafe_allow_html=True)
     
     st.markdown(f'''<a href={'https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/'}>
-    <button style="background-color:Green;">'twitter'</button></a>''', unsafe_allow_html=True)
+    <button style="background-color:Green;">Twitter</button></a>''', unsafe_allow_html=True)
     
     st.markdown(f'''<a href={'https://www.youtube.com/'}>
-    <button style="background-color:Green;">'youtube'</button></a>''', unsafe_allow_html=True)
+    <button style="background-color:Green;">Youtube</button></a>''', unsafe_allow_html=True)
     
 #     if st.button('linkedin'):
 #         webbrowser.open_new('https://www.linkedin.com/in/aime-magnifique-ndayishimiye-037594213/')
