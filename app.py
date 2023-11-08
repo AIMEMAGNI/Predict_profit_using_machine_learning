@@ -135,8 +135,8 @@ if selected == "Contact":
 #     elif st.button('youtube'):
 #         webbrowser.open_new_tab('https://www.youtube.com/')
     
-    st.write("To view this project on github, click the link below.")
-    st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
+    # st.write("To view this project on github, click the link below.")
+    # st.write("https://github.com/AIMEMAGNI/Predict_profit_using_machine_learning")
     
     
    
